@@ -73,3 +73,50 @@ public class TestSort {
 ```
 # OUTPUT
 ![EXPERIMENT5 OUTPUT](exp5.png)
+
+## TITLE: 5b.) java program that implements runtime polymorphism
+```
+// Base class
+class Vehicle {
+    void run() {
+        System.out.println("Vehicle is running");
+    }
+}
+
+// Subclass Car
+class Car extends Vehicle {
+    // Overriding method
+    void run() {
+        System.out.println("Car is running on four wheels");
+    }
+}
+
+// Subclass Bike
+class Bike extends Vehicle {
+    // Overriding method
+    void run() {
+        System.out.println("Bike is running on two wheels");
+    }
+}
+
+// Main class
+public class TestVehicle {
+    public static void main(String[] args) {
+        Vehicle v;
+
+        // Reference to Car object
+        v = new Car();
+        v.run();   // calls Car's run()
+
+        // Reference to Bike object
+        v = new Bike();
+        v.run();   // calls Bike's run()
+
+        // Reference to Vehicle object
+        v = new Vehicle();
+        v.run();   // calls Vehicle's run()
+    }
+}
+```
+# OUTPUT
+![EXPERIMENT5 OUTPUT](exp5b.png)
