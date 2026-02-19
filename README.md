@@ -119,4 +119,28 @@ public class TestVehicle {
 }
 ```
 # OUTPUT
+![EXPERIMENT5 OUTPUT](exp5c.png)
+
+## TITLE: 5c.)java program using stringbuffer to delete,remove character
+```
+public class StringBufferDeleteDemo {
+    public static void main(String[] args) {
+
+        // Create StringBuffer object
+        StringBuffer sb = new StringBuffer("Java Programming");
+
+        // Display original string
+        System.out.println("Original String: " + sb);
+
+        // Delete single character at index 4
+        sb.deleteCharAt(4);
+        System.out.println("After deleting character at index 4: " + sb);
+
+        // Delete characters from index 0 to 4
+        sb.delete(0, 4);
+        System.out.println("After deleting characters from index 0 to 4: " + sb);
+    }
+}
+```
+# OUTPUT
 ![EXPERIMENT5 OUTPUT](exp5b.png)
